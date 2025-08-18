@@ -283,7 +283,7 @@ const Home: React.FC = () => {
                 serviceAreas={[
                   {
                     center: { lat: -36.5849, lng: 174.6926 },
-                    radius: 25000,
+                    radius: 50000,
                     name: 'Primary Service Area'
                   }
                 ]}
