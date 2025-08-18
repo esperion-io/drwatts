@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             </ul>
             <div className="mt-4">
               <Link
-                to="/contact"
+                to="/contact#contact-form"
                 className="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm"
               >
                 View Full Coverage Map →
@@ -89,18 +89,18 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <a
-                href="tel:+6499XXXXXX"
+                href="tel:+64220208415"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+64 9 XXX XXXX</span>
+                <span className="text-sm">+64 220208415</span>
               </a>
               <a
-                href="mailto:info@drwatts.co.nz"
+                href="mailto:office@drwatts.co.nz"
                 className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">info@drwatts.co.nz</span>
+                <span className="text-sm">office@drwatts.co.nz</span>
               </a>
               <div className="flex items-start space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4 mt-0.5" />
@@ -125,13 +125,13 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex items-center space-x-6">
               <Link
-                to="/contact"
+                to="/contact#contact-form"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
               >
                 Get Free Quote
               </Link>
               <a
-                href="tel:+6499XXXXXX"
+                href="tel:+64220208415"
                 className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors duration-200"
               >
                 Emergency Call

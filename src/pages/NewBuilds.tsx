@@ -110,7 +110,7 @@ const NewBuilds: React.FC = () => {
                   Get Project Quote
                 </Link>
                 <a
-                  href="tel:+6499XXXXXX"
+                  href="tel:+64220208415"
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-purple-900 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -308,10 +308,10 @@ const NewBuilds: React.FC = () => {
                   Request Detailed Quote
                 </Link>
                 <a
-                  href="tel:+6499XXXXXX"
+                  href="tel:+64220208415"
                   className="block w-full bg-transparent border-2 border-purple-600 text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-600 hover:text-white transition-colors duration-200 text-center"
                 >
-                  Call to Discuss: +64 9 XXX XXXX
+                  Call to Discuss: +64 220208415
                 </a>
               </div>
             </div>
@@ -356,11 +356,11 @@ const NewBuilds: React.FC = () => {
               Get Project Quote
             </Link>
             <a
-              href="tel:+6499XXXXXX"
+              href="tel:+64220208415"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-purple-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call Now: +64 9 XXX XXXX</span>
+              <span>Call Now: +64 220208415</span>
             </a>
           </div>
         </div>

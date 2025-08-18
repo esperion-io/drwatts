@@ -29,8 +29,8 @@ const SEO: React.FC<SEOProps> = ({
     alternateName: 'Dr Watts Electrical Services',
     description: 'Professional electrical services in Auckland including switchboard upgrades, LED lighting installations, new builds, renovations, and emergency electrical repairs.',
     url: 'https://drwattselectrical.co.nz',
-    telephone: '+64 9 XXX XXXX',
-    email: 'info@drwattselectrical.co.nz',
+    telephone: '+64220208415',
+    email: 'office@drwatts.co.nz',
     priceRange: '$$',
     image: [
       'https://drwattselectrical.co.nz/images/logo.png',
@@ -306,8 +306,8 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="business:contact_data:region" content="Auckland" />
       <meta name="business:contact_data:postal_code" content="1010" />
       <meta name="business:contact_data:country_name" content="New Zealand" />
-      <meta name="business:contact_data:phone_number" content="+64 9 XXX XXXX" />
-      <meta name="business:contact_data:email" content="info@drwattselectrical.co.nz" />
+      <meta name="business:contact_data:phone_number" content="+64220208415" />
+      <meta name="business:contact_data:email" content="office@drwatts.co.nz" />
 
       {/* Structured Data */}
       <script type="application/ld+json">

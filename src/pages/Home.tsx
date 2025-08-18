@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, Star, MapPin, Zap, Shield, Clock, CheckCircle } from 'lucide-react';
-import GoogleMap from '../components/GoogleMap';
+import LeafletMap from '../components/LeafletMap';
 
 const Home: React.FC = () => {
   const services = [
@@ -107,13 +107,13 @@ const Home: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  to="/contact"
+                  to="/contact#contact-form"
                   className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center"
                 >
                   Get Free Quote
                 </Link>
                 <a
-                  href="tel:+6499XXXXXX"
+                  href="tel:+64220208415"
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -252,22 +252,22 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <Link
-                to="/contact"
+                to="/contact#contact-form"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
               >
                 Check Service Availability
               </Link>
             </div>
             <div>
-              <GoogleMap
+              <LeafletMap
                 height="400px"
                 zoom={10}
-                center={{ lat: -36.8485, lng: 174.7633 }}
+                center={{ lat: -36.5849, lng: 174.6926 }}
                 markers={[
                   {
-                    position: { lat: -36.8485, lng: 174.7633 },
-                    title: 'Dr Watts Electrical - Auckland CBD',
-                    info: 'Professional electrical services in Auckland CBD and surrounding areas'
+                    position: { lat: -36.5849, lng: 174.6926 },
+                    title: 'Dr Watts Electrical - Orewa',
+                    info: 'Professional electrical services serving Hibiscus Coast and surrounding Auckland areas'
                   },
                   {
                     position: { lat: -36.7755, lng: 174.7348 },
@@ -275,14 +275,14 @@ const Home: React.FC = () => {
                     info: 'Serving Takapuna, Milford, and North Shore communities'
                   },
                   {
-                    position: { lat: -36.9282, lng: 174.8316 },
-                    title: 'East Auckland Services',
-                    info: 'Covering Botany, Howick, and East Auckland areas'
+                    position: { lat: -36.8485, lng: 174.7633 },
+                    title: 'Auckland CBD Services',
+                    info: 'Covering Auckland CBD and central areas'
                   }
                 ]}
                 serviceAreas={[
                   {
-                    center: { lat: -36.8485, lng: 174.7633 },
+                    center: { lat: -36.5849, lng: 174.6926 },
                     radius: 25000,
                     name: 'Primary Service Area'
                   }
@@ -304,17 +304,17 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
               Get Free Quote
             </Link>
             <a
-              href="tel:+6499XXXXXX"
+              href="tel:+64220208415"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call Emergency: +64 9 XXX XXXX</span>
+              <span>Call Emergency: +64 220208415</span>
             </a>
           </div>
         </div>

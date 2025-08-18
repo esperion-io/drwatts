@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, Clock, CheckCircle, AlertCircle, Send, Shield, Star, Zap } from 'lucide-react';
-import GoogleMap from '../components/GoogleMap';
+import LeafletMap from '../components/LeafletMap';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -112,11 +112,11 @@ const Contact: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+6499XXXXXX"
+                href="tel:+64220208415"
                 className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <Phone className="h-5 w-5" />
-                <span>Call: +64 9 XXX XXXX</span>
+                <span>Call: +64 220208415</span>
               </a>
               <a
                 href="#contact-form"
@@ -339,8 +339,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">Call us for immediate assistance</p>
-                    <a href="tel:+6499XXXXXX" className="text-green-600 font-medium hover:text-green-700">
-                      +64 9 XXX XXXX
+                    <a href="tel:+64220208415" className="text-green-600 font-medium hover:text-green-700">
+                      +64 220208415
                     </a>
                   </div>
                 </div>
@@ -352,8 +352,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600 mb-2">Send us your questions</p>
-                    <a href="mailto:info@drwatts.co.nz" className="text-green-600 font-medium hover:text-green-700">
-                      info@drwatts.co.nz
+                    <a href="mailto:office@drwatts.co.nz" className="text-green-600 font-medium hover:text-green-700">
+                      office@drwatts.co.nz
                     </a>
                   </div>
                 </div>
@@ -424,20 +424,20 @@ const Contact: React.FC = () => {
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <GoogleMap
+            <LeafletMap
               height="384px"
               zoom={11}
-              center={{ lat: -36.8485, lng: 174.7633 }}
+              center={{ lat: -36.5849, lng: 174.6926 }}
               markers={[
                 {
-                  position: { lat: -36.8485, lng: 174.7633 },
-                  title: 'Dr Watts Electrical Headquarters',
-                  info: 'Main office serving all Auckland areas'
+                  position: { lat: -36.5849, lng: 174.6926 },
+                  title: 'Dr Watts Electrical - Orewa',
+                  info: 'Professional electrical services serving Hibiscus Coast and all Auckland areas'
                 }
               ]}
               serviceAreas={[
                 {
-                  center: { lat: -36.8485, lng: 174.7633 },
+                  center: { lat: -36.5849, lng: 174.6926 },
                   radius: 30000,
                   name: 'Service Coverage Area'
                 }
@@ -501,10 +501,10 @@ const Contact: React.FC = () => {
             Don't wait - electrical emergencies can be dangerous. Call us now for immediate assistance.
           </p>
           <a
-            href="tel:+6499XXXXXX"
+            href="tel:+64220208415"
             className="inline-block bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition-colors duration-200"
           >
-            Emergency Call: +64 9 XXX XXXX
+            Emergency Call: +64 220208415
           </a>
         </div>
       </section>

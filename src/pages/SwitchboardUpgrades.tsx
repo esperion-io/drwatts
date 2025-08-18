@@ -76,7 +76,7 @@ const SwitchboardUpgrades: React.FC = () => {
                   Get Free Quote
                 </Link>
                 <a
-                  href="tel:+6499XXXXXX"
+                  href="tel:+64220208415"
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -164,11 +164,11 @@ const SwitchboardUpgrades: React.FC = () => {
                 If you're experiencing any electrical emergencies, don't wait. Our licensed electricians are available 24/7 for urgent switchboard issues.
               </p>
               <a
-                href="tel:+6499XXXXXX"
+                href="tel:+64220208415"
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200 flex items-center justify-center space-x-2 w-full"
               >
                 <Phone className="h-5 w-5" />
-                <span>Call Emergency: +64 9 XXX XXXX</span>
+                <span>Call Emergency: +64 220208415</span>
               </a>
             </div>
           </div>
@@ -282,11 +282,11 @@ const SwitchboardUpgrades: React.FC = () => {
               Get Free Quote
             </Link>
             <a
-              href="tel:+6499XXXXXX"
+              href="tel:+64220208415"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call Now: +64 9 XXX XXXX</span>
+              <span>Call Now: +64 220208415</span>
             </a>
           </div>
         </div>

@@ -173,14 +173,14 @@ const RCDGuidance: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+6499XXXXXX"
+                  href="tel:+64220208415"
                   className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
                   <span>RCD Emergency</span>
                 </a>
                 <Link
-                  to="/contact"
+                  to="/contact#contact-form"
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-900 transition-colors duration-200 text-center"
                 >
                   Book RCD Service
@@ -451,7 +451,7 @@ const RCDGuidance: React.FC = () => {
               Need professional RCD testing or having issues with your safety switch?
             </p>
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors duration-200"
             >
               Book RCD Testing Service
@@ -485,10 +485,10 @@ const RCDGuidance: React.FC = () => {
                 If you notice any of these signs, stop using the affected circuits and call immediately.
               </p>
               <a
-                href="tel:+6499XXXXXX"
+                href="tel:+64220208415"
                 className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200"
               >
-                Emergency Call: +64 9 XXX XXXX
+                Emergency Call: +64 220208415
               </a>
             </div>
           </div>
@@ -560,16 +560,16 @@ const RCDGuidance: React.FC = () => {
               </ul>
               <div className="space-y-3">
                 <Link
-                  to="/contact"
+                  to="/contact#contact-form"
                   className="block w-full bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors duration-200 text-center"
                 >
                   Book RCD Service
                 </Link>
                 <a
-                  href="tel:+6499XXXXXX"
+                  href="tel:+64220208415"
                   className="block w-full bg-transparent border-2 border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-600 hover:text-white transition-colors duration-200 text-center"
                 >
-                  Call: +64 9 XXX XXXX
+                  Call: +64 220208415
                 </a>
               </div>
             </div>
@@ -608,17 +608,17 @@ const RCDGuidance: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
               Book RCD Service
             </Link>
             <a
-              href="tel:+6499XXXXXX"
+              href="tel:+64220208415"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Emergency: +64 9 XXX XXXX</span>
+              <span>Emergency: +64 220208415</span>
             </a>
           </div>
         </div>
