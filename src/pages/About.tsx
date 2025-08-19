@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Shield, Award, Users, Clock, CheckCircle, Phone, Star, Zap, Wrench, Home } from 'lucide-react';
+import InstagramFeed from '../components/InstagramFeed';
 
 const About: React.FC = () => {
   const teamMembers = [
@@ -386,6 +387,21 @@ const About: React.FC = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Instagram Feed Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              See Our Work in Action
+            </h2>
+            <p className="text-xl text-gray-600">
+              Follow our latest projects and electrical installations on Instagram
+            </p>
+          </div>
+          <InstagramFeed username="dr_watts_electrical_services" />
         </div>
       </section>
 

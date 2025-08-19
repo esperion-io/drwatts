@@ -426,7 +426,7 @@ const Contact: React.FC = () => {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <LeafletMap
               height="384px"
-              zoom={10}
+              zoom={9}
               center={{ lat: -36.5849, lng: 174.6926 }}
               markers={[
                 {
