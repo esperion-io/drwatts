@@ -212,9 +212,9 @@ const About: React.FC = () => {
               Licensed professionals dedicated to your electrical safety
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="w-full">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
+              <div key={index} className="w-full bg-gray-50 rounded-lg p-6 box-border">
                 <div className="text-center mb-4">
                   <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-12 w-12 text-green-600" />
