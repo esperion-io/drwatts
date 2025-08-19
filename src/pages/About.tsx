@@ -7,25 +7,11 @@ import InstagramFeed from '../components/InstagramFeed';
 const About: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Dr. James Watts',
+      name: 'Mark Rosewell',
       role: 'Master Electrician & Founder',
       experience: '15+ Years',
       qualifications: ['Master Electrician License', 'Electrical Engineering Degree', 'Safety Certification'],
       description: 'Leading Auckland\'s electrical industry with innovative solutions and exceptional service.'
-    },
-    {
-      name: 'Sarah Mitchell',
-      role: 'Senior Electrician',
-      experience: '10+ Years',
-      qualifications: ['Licensed Electrician', 'Commercial Specialist', 'LED Lighting Expert'],
-      description: 'Specializing in commercial installations and energy-efficient lighting solutions.'
-    },
-    {
-      name: 'Mike Thompson',
-      role: 'Residential Specialist',
-      experience: '8+ Years',
-      qualifications: ['Licensed Electrician', 'Home Automation Expert', 'Safety Inspector'],
-      description: 'Expert in residential electrical systems and smart home technologies.'
     }
   ];
 
@@ -158,16 +144,7 @@ const About: React.FC = () => {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Dr Watts Electrical was founded in 2008 by Master Electrician Dr. James Watts with a simple mission: to provide Auckland homeowners with safe, reliable, and professional electrical services they can trust.
-                </p>
-                <p>
-                  What started as a one-man operation has grown into Auckland's most trusted electrical service company, serving hundreds of satisfied customers across the greater Auckland region.
-                </p>
-                <p>
-                  Our commitment to excellence, safety, and customer satisfaction has earned us a reputation as the go-to electrical experts for everything from simple repairs to complex installations.
-                </p>
-                <p>
-                  Today, we continue to lead the industry with innovative solutions, cutting-edge technology, and the same personal touch that has made us Auckland's preferred electrical service provider.
+                  At Dr Watts, we love every type of project. We take great pride in maintaining a consistently high-caliber level of work. Open and honest lines of communication with our clients during every step of the project is key to building relationships with successful outcomes. Customer satisfaction is our number one priority, so we have worked hard to meld creative problem-solving with excellent craftsmanship. We take on projects of all shapes and sizes as seen in our portfolio below, and believe in quality over quantity. Contact us to see how we can help you.
                 </p>
               </div>
             </div>

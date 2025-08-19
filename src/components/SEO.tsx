@@ -236,13 +236,13 @@ const SEO: React.FC<SEOProps> = ({
     ],
     founder: {
       '@type': 'Person',
-      name: 'Dr. James Watts',
+      name: 'Mark Rosewell',
       jobTitle: 'Master Electrician'
     },
     employee: [
       {
         '@type': 'Person',
-        name: 'Dr. James Watts',
+        name: 'Mark Rosewell',
         jobTitle: 'Master Electrician & Founder'
       },
       {
