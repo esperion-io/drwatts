@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             <img 
               src={LogoImage} 
               alt="Dr Watts Electrical Services" 
-              className="h-20 w-auto object-contain"
+              className="h-12 sm:h-16 lg:h-20 w-auto object-contain"
             />
           </Link>
 
