@@ -53,7 +53,7 @@ interface LeafletMapProps {
 
 const LeafletMap: React.FC<LeafletMapProps> = ({
   height = '400px',
-  zoom = 11,
+  zoom = 10,
   center = { lat: -36.5849, lng: 174.6926 }, // Orewa town center, Hibiscus Coast
   markers = [],
   serviceAreas = []

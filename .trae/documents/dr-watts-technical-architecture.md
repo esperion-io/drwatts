@@ -77,7 +77,7 @@ Example Request:
 {
   "name": "John Smith",
   "email": "john@example.com",
-  "phone": "+64 21 123 4567",
+  "phone": "021 123 4567",
   "service": "Switchboard Upgrade",
   "message": "Need urgent switchboard replacement",
   "location": "Auckland CBD"
@@ -220,7 +220,7 @@ Data is managed through JSON files and React components:
 ```json
 {
   "contact": {
-    "phone": "+64 9 XXX XXXX",
+    "phone": "09 XXX XXXX",
     "email": "info@drwatts.co.nz",
     "address": "Auckland, New Zealand",
     "serviceAreas": ["Auckland CBD", "North Shore", "West Auckland"],
@@ -245,7 +245,7 @@ Data is managed through JSON files and React components:
     "localBusiness": {
       "name": "Dr Watts Electrical Services Ltd",
       "address": "Auckland, New Zealand",
-      "phone": "+64 9 XXX XXXX",
+      "phone": "09 XXX XXXX",
       "serviceArea": "Auckland, New Zealand"
     }
   }

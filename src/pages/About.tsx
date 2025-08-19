@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Shield, Award, Users, Clock, CheckCircle, Phone, Star, Zap, Wrench, Home } from 'lucide-react';
+import InstagramFeed from '../components/InstagramFeed';
 
 const About: React.FC = () => {
   const teamMembers = [
@@ -389,6 +390,21 @@ const About: React.FC = () => {
         </div>
       </section>
 
+      {/* Instagram Feed Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              See Our Work in Action
+            </h2>
+            <p className="text-xl text-gray-600">
+              Follow our latest projects and electrical installations on Instagram
+            </p>
+          </div>
+          <InstagramFeed username="dr_watts_electrical_services" />
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-green-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -410,7 +426,7 @@ const About: React.FC = () => {
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call: +64 220208415</span>
+              <span>Call: 0220208415</span>
             </a>
           </div>
         </div>

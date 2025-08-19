@@ -300,7 +300,7 @@ const FaultFinding: React.FC = () => {
                 href="tel:+64220208415"
                 className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200"
               >
-                Emergency Call: +64 220208415
+                Emergency Call: 0220208415
               </a>
             </div>
           </div>
@@ -436,7 +436,7 @@ const FaultFinding: React.FC = () => {
               className="bg-yellow-400 text-red-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Emergency: +64 220208415</span>
+              <span>Emergency: 0220208415</span>
             </a>
             <Link
               to="/contact#contact-form"
