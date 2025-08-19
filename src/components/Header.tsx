@@ -22,8 +22,8 @@ const Header: React.FC = () => {
         { name: 'RCD Safety Guide', href: '/services/rcd-guidance' },
       ],
     },
-    { name: 'Contact', href: '/contact' },
     { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const phoneNumber = '0220208415';

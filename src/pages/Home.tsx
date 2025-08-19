@@ -334,9 +334,13 @@ const Home: React.FC = () => {
                   <Link
                     to={service.href}
                     className="inline-block w-full bg-blue-600 text-white text-center px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
-                  >
-                    Learn More
-                  </Link>
+                    onClick={() => {
+                      // Smooth scroll to top when navigating to service pages
+                      setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }, 100);
+                    }}
+                  >Learn More</Link>
                 </div>
               );
             })}
