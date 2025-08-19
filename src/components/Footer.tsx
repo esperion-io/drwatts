@@ -1,146 +1,113 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Zap, Clock, Shield } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import LogoImage from '../assets/Image.svg';
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
-
-  const services = [
-    { name: 'Switchboard Upgrades', href: '/services/switchboard-upgrades' },
-    { name: 'LED Lighting', href: '/services/led-lighting' },
-    { name: 'New Builds', href: '/services/new-builds' },
-    { name: 'Renovations', href: '/services/renovations' },
-    { name: 'Fault Finding & Repairs', href: '/services/fault-finding' },
-    { name: 'RCD Safety Guide', href: '/services/rcd-guidance' },
-  ];
-
-  const serviceAreas = [
-    'Auckland CBD',
-    'North Shore',
-    'West Auckland',
-    'South Auckland',
-    'East Auckland',
-    'Waitakere',
-  ];
-
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Dr Watts</h3>
-                <p className="text-sm text-gray-400">Electrical Services Ltd</p>
-              </div>
+          <div className="col-span-1 lg:col-span-2">
+            {/* Dr Watts Logo */}
+            <div className="flex items-center space-x-3 mb-6">
+              <Link to="/" className="flex items-center">
+                <img 
+                  src={LogoImage} 
+                  alt="Dr Watts Electrical Services" 
+                  className="h-16 w-auto object-contain"
+                />
+              </Link>   
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Professional electrical services across Auckland. Licensed, insured, and committed to safety and quality workmanship.
+            
+            <p className="text-gray-300 mb-6 max-w-md">
+              Auckland's trusted electrical service company. Licensed electricians providing safe, reliable, and professional electrical services since 2008.
             </p>
-            <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <Shield className="h-4 w-4" />
-              <span>Licensed Electrical Contractor</span>
+            
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-yellow-400" />
+                <a href="tel:+64220208415" className="text-gray-300 hover:text-white transition-colors">
+                  022 020 8415
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-yellow-400" />
+                <a href="mailto:info@drwatts.co.nz" className="text-gray-300 hover:text-white transition-colors">
+                  info@drwatts.co.nz
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-yellow-400" />
+                <span className="text-gray-300">Serving Greater Auckland</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Clock className="h-5 w-5 text-yellow-400" />
+                <span className="text-gray-300">24/7 Emergency Service</span>
+              </div>
             </div>
           </div>
-
+          
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service.name}>
-                  <Link
-                    to={service.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
-                  >
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/switchboard-upgrades" className="text-gray-300 hover:text-white transition-colors">
+                  Switchboard Upgrades
+                </Link>
+              </li>
+              <li>
+                <Link to="/led-lighting" className="text-gray-300 hover:text-white transition-colors">
+                  LED Lighting
+                </Link>
+              </li>
+              <li>
+                <Link to="/new-builds" className="text-gray-300 hover:text-white transition-colors">
+                  New Builds
+                </Link>
+              </li>
+              <li>
+                <Link to="/renovations" className="text-gray-300 hover:text-white transition-colors">
+                  Renovations
+                </Link>
+              </li>
+              <li>
+                <Link to="/fault-finding" className="text-gray-300 hover:text-white transition-colors">
+                  Fault Finding
+                </Link>
+              </li>
             </ul>
           </div>
-
-          {/* Service Areas */}
+          
+          {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Service Areas</h4>
+            <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
-              {serviceAreas.map((area) => (
-                <li key={area} className="text-gray-400 text-sm">
-                  {area}
-                </li>
-              ))}
+              <li>
+                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <a href="tel:+64220208415" className="text-gray-300 hover:text-white transition-colors">
+                  Emergency Service
+                </a>
+              </li>
             </ul>
-            <div className="mt-4">
-              <Link
-                to="/contact#contact-form"
-                className="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm"
-              >
-                View Full Coverage Map →
-              </Link>
-            </div>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <div className="space-y-3">
-              <a
-                href="tel:+64220208415"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">+64 220208415</span>
-              </a>
-              <a
-                href="mailto:office@drwatts.co.nz"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                <Mail className="h-4 w-4" />
-                <span className="text-sm">office@drwatts.co.nz</span>
-              </a>
-              <div className="flex items-start space-x-2 text-gray-400">
-                <MapPin className="h-4 w-4 mt-0.5" />
-                <span className="text-sm">Auckland, New Zealand</span>
-              </div>
-              <div className="flex items-start space-x-2 text-gray-400">
-                <Clock className="h-4 w-4 mt-0.5" />
-                <div className="text-sm">
-                  <div>Mon-Fri: 7:00 AM - 6:00 PM</div>
-                  <div>24/7 Emergency Service</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-400">
-              © {currentYear} Dr Watts Electrical Services Ltd. All rights reserved.
-            </div>
-            <div className="flex items-center space-x-6">
-              <Link
-                to="/contact#contact-form"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
-              >
-                Get Free Quote
-              </Link>
-              <a
-                href="tel:+64220208415"
-                className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors duration-200"
-              >
-                Emergency Call
-              </a>
-            </div>
-          </div>
-          <div className="mt-4 text-xs text-gray-500 text-center md:text-left">
-            Licensed Electrical Contractor | Fully Insured | WorkSafe Certified | Master Electricians Member
-          </div>
+        
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p className="text-gray-400">
+            © {new Date().getFullYear()} Dr Watts Electrical Services Ltd. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

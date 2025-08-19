@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X, Zap } from 'lucide-react';
+import { Phone, Menu, X } from 'lucide-react';
 import { cn } from '../lib/utils';
+import LogoImage from '../assets/Image.svg';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,14 +44,12 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <Zap className="h-6 w-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">Dr Watts</span>
-              <span className="text-xs text-gray-600 hidden sm:block">Electrical Services</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={LogoImage} 
+              alt="Dr Watts Electrical Services" 
+              className="h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
