@@ -16,7 +16,7 @@ import RCDGuidance from './pages/RCDGuidance';
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/drwatts">
         <SEO />
         <Routes>
           <Route path="/" element={<Layout />}>
