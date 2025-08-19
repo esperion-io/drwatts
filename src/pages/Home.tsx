@@ -314,7 +314,7 @@ const Home: React.FC = () => {
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call Emergency: +64 220208415</span>
+              <span>Call Emergency: 0220208415</span>
             </a>
           </div>
         </div>
