@@ -54,27 +54,47 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/switchboard-upgrades" className="text-gray-300 hover:text-white transition-colors">
+                <Link 
+                  to="/services/switchboard-upgrades" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Switchboard Upgrades
                 </Link>
               </li>
               <li>
-                <Link to="/led-lighting" className="text-gray-300 hover:text-white transition-colors">
+                <Link 
+                  to="/services/led-lighting" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   LED Lighting
                 </Link>
               </li>
               <li>
-                <Link to="/new-builds" className="text-gray-300 hover:text-white transition-colors">
+                <Link 
+                  to="/services/new-builds" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   New Builds
                 </Link>
               </li>
               <li>
-                <Link to="/renovations" className="text-gray-300 hover:text-white transition-colors">
+                <Link 
+                  to="/services/renovations" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Renovations
                 </Link>
               </li>
               <li>
-                <Link to="/fault-finding" className="text-gray-300 hover:text-white transition-colors">
+                <Link 
+                  to="/services/fault-finding" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Fault Finding
                 </Link>
               </li>
