@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import LogoImage from '../assets/Image.svg';
+import LogoImage from '../assets/drwattslogo.svg';
 
 const Footer: React.FC = () => {
   return (
@@ -13,9 +13,10 @@ const Footer: React.FC = () => {
             {/* Dr Watts Logo */}
             <div className="flex items-center space-x-3 mb-6">
               <Link to="/" className="flex items-center">
-                <img 
-                  src={LogoImage} 
+              <img 
+                  src={LogoImage}
                   alt="Dr Watts Electrical Services" 
+                  style={{ filter: 'invert(100%)' }}
                   className="h-20 w-auto object-contain"
                 />
               </Link>   
@@ -54,27 +55,27 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/switchboard-upgrades" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/services/switchboard-upgrades" className="text-gray-300 hover:text-white transition-colors">
                   Switchboard Upgrades
                 </Link>
               </li>
               <li>
-                <Link to="/led-lighting" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/services/led-lighting" className="text-gray-300 hover:text-white transition-colors">
                   LED Lighting
                 </Link>
               </li>
               <li>
-                <Link to="/new-builds" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/services/new-builds" className="text-gray-300 hover:text-white transition-colors">
                   New Builds
                 </Link>
               </li>
               <li>
-                <Link to="/renovations" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/services/renovations" className="text-gray-300 hover:text-white transition-colors">
                   Renovations
                 </Link>
               </li>
               <li>
-                <Link to="/fault-finding" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/services/fault-finding" className="text-gray-300 hover:text-white transition-colors">
                   Fault Finding
                 </Link>
               </li>
@@ -107,6 +108,9 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
             © {new Date().getFullYear()} Dr Watts Electrical Services Ltd. All rights reserved.
+          </p>
+          <p>
+          <a href="https://www.esperion.io" className="text-gray-800 hover:text-white transition-colors">built by esperion.</a>
           </p>
         </div>
       </div>

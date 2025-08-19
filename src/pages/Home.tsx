@@ -95,14 +95,14 @@ const Home: React.FC = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+      <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Professional <span className="text-yellow-400">Electrical Services</span> in Auckland
               </h1>
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+              <p className="text-xl text-black-100 mb-8 leading-relaxed">
                 Licensed electricians providing safe, reliable electrical solutions for homes and businesses across Auckland. From switchboard upgrades to emergency repairs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -261,7 +261,7 @@ const Home: React.FC = () => {
             <div>
               <LeafletMap
                 height="400px"
-                zoom={10}
+                zoom={9}
                 center={{ lat: -36.5849, lng: 174.6926 }}
                 markers={[
                   {
