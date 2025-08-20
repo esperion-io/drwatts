@@ -26,7 +26,7 @@ const Header: React.FC = () => {
     { name: 'Contact', href: '/contact' },
   ];
 
-  const phoneNumber = '0220208415';
+  const phoneNumber = '022 020 8415';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

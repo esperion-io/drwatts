@@ -168,7 +168,7 @@ const SwitchboardUpgrades: React.FC = () => {
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200 flex items-center justify-center space-x-2 w-full"
               >
                 <Phone className="h-5 w-5" />
-                <span>Call Emergency: 0220208415</span>
+                <span>Call Emergency: 022 020 8415</span>
               </a>
             </div>
           </div>
@@ -286,7 +286,7 @@ const SwitchboardUpgrades: React.FC = () => {
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call Now: 0220208415</span>
+              <span>Call Now: 022 020 8415</span>
             </a>
           </div>
         </div>

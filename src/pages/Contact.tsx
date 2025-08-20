@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
                 className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <Phone className="h-5 w-5" />
-                <span>Call: 0220208415</span>
+                <span>Call: 022 020 8415</span>
               </a>
               <a
                 href="#contact-form"
@@ -340,7 +340,7 @@ const Contact: React.FC = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">Call us for immediate assistance</p>
                     <a href="tel:+64220208415" className="text-green-600 font-medium hover:text-green-700">
-                      0220208415
+                      022 020 8415
                     </a>
                   </div>
                 </div>
@@ -504,7 +504,7 @@ const Contact: React.FC = () => {
             href="tel:+64220208415"
             className="inline-block bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-50 transition-colors duration-200"
           >
-            Emergency Call: 0220208415
+            Emergency Call: 022 020 8415
           </a>
         </div>
       </section>

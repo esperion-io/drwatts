@@ -488,7 +488,7 @@ const RCDGuidance: React.FC = () => {
                 href="tel:+64220208415"
                 className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200"
               >
-                Emergency Call: 0220208415
+                Emergency Call: 022 020 8415
               </a>
             </div>
           </div>
@@ -569,7 +569,7 @@ const RCDGuidance: React.FC = () => {
                   href="tel:+64220208415"
                   className="block w-full bg-transparent border-2 border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-600 hover:text-white transition-colors duration-200 text-center"
                 >
-                  Call: 0220208415
+                  Call: 022 020 8415
                 </a>
               </div>
             </div>
@@ -618,7 +618,7 @@ const RCDGuidance: React.FC = () => {
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Emergency: 0220208415</span>
+              <span>Emergency: 022 020 8415</span>
             </a>
           </div>
         </div>
