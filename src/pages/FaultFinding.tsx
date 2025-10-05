@@ -120,7 +120,7 @@ const FaultFinding: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Electrical Fault Finding Auckland | Emergency Electrical Repairs</title>
+        <title>Electrical Fault Finding Hibiscus Coast | Emergency Electrical Repairs</title>
         <meta name="description" content="Expert electrical fault finding and repair services in Auckland. 24/7 emergency electrician for power outages, circuit problems, and electrical faults. Fast diagnosis and repair." />
         <meta name="keywords" content="electrical fault finding auckland, emergency electrician, electrical repairs, power outage, circuit problems, electrical troubleshooting, electrical diagnosis" />
       </Helmet>

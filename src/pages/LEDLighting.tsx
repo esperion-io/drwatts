@@ -85,9 +85,9 @@ const LEDLighting: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>LED Lighting Upgrades Auckland | Energy Efficient Lighting Installation</title>
-        <meta name="description" content="Professional LED lighting upgrades in Auckland. Save up to 80% on energy costs. Downlights, strip lighting, outdoor LED installation. Free quotes available." />
-        <meta name="keywords" content="LED lighting auckland, LED downlights, energy efficient lighting, LED strip lights, outdoor LED lighting, lighting upgrade, electrician auckland" />
+        <title>LED Lighting Upgrades Hibiscus Coast | Energy Efficient Lighting Installation</title>
+        <meta name="description" content="Professional LED lighting upgrades on the Hibiscus Coast and Auckland. Save up to 80% on energy costs. Downlights, strip lighting, outdoor LED installation. Free quotes available." />
+        <meta name="keywords" content="LED lighting hibiscus coast, orewa LED lighting, whangaparaoa LED lighting, LED downlights, energy efficient lighting, LED strip lights, outdoor LED lighting, lighting upgrade, electrician auckland" />
       </Helmet>
 
       {/* Hero Section */}
@@ -96,7 +96,7 @@ const LEDLighting: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Energy-Efficient <span className="text-yellow-400">LED Lighting Upgrades</span> in Auckland
+                Energy-Efficient <span className="text-yellow-400">LED Lighting Upgrades</span> on the Hibiscus Coast
               </h1>
               <p className="text-xl text-green-100 mb-8 leading-relaxed">
                 Transform your home or business with modern LED lighting. Save up to 80% on energy costs while enjoying superior light quality and longevity.

@@ -12,9 +12,9 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'Dr Watts Electrical Auckland | Licensed Electricians & Electrical Services',
-  description = 'Professional electrical services in Auckland. Licensed electricians for switchboard upgrades, LED lighting, new builds, renovations & emergency repairs. Free quotes available.',
-  keywords = 'electrician auckland, electrical services auckland, switchboard upgrade, LED lighting, electrical repairs, licensed electrician, emergency electrician',
+  title = 'Dr Watts Electrical Hibiscus Coast | Licensed Electricians & Electrical Services',
+  description = 'Professional electrical services on the Hibiscus Coast and Auckland. Licensed electricians for switchboard upgrades, LED lighting, new builds, renovations & emergency repairs. Free quotes available.',
+  keywords = 'electrician hibiscus coast, orewa electrician, whangaparaoa electrician, electrical services auckland, switchboard upgrade, LED lighting, electrical repairs, licensed electrician, emergency electrician',
   image = 'https://drwattselectrical.co.nz/og-image.jpg',
   url = 'https://drwattselectrical.co.nz',
   type = 'website',
@@ -27,7 +27,7 @@ const SEO: React.FC<SEOProps> = ({
     '@id': 'https://drwattselectrical.co.nz/#organization',
     name: 'Dr Watts Electrical',
     alternateName: 'Dr Watts Electrical Services',
-    description: 'Professional electrical services in Auckland including switchboard upgrades, LED lighting installations, new builds, renovations, and emergency electrical repairs.',
+    description: 'Professional electrical services on the Hibiscus Coast and Auckland including switchboard upgrades, LED lighting installations, new builds, renovations, and emergency electrical repairs.',
     url: 'https://drwattselectrical.co.nz',
     telephone: '+64220208415',
     email: 'office@drwatts.co.nz',
@@ -45,10 +45,10 @@ const SEO: React.FC<SEOProps> = ({
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Auckland',
-      addressLocality: 'Auckland',
+      streetAddress: 'Orewa',
+      addressLocality: 'Hibiscus Coast',
       addressRegion: 'Auckland',
-      postalCode: '1010',
+      postalCode: '0931',
       addressCountry: 'NZ'
     },
     geo: {
@@ -57,6 +57,30 @@ const SEO: React.FC<SEOProps> = ({
       longitude: 174.7633
     },
     areaServed: [
+      {
+        '@type': 'Place',
+        name: 'Hibiscus Coast',
+        containedInPlace: {
+          '@type': 'City',
+          name: 'Auckland'
+        }
+      },
+      {
+        '@type': 'Place',
+        name: 'Orewa',
+        containedInPlace: {
+          '@type': 'Place',
+          name: 'Hibiscus Coast'
+        }
+      },
+      {
+        '@type': 'Place',
+        name: 'Whangaparaoa',
+        containedInPlace: {
+          '@type': 'Place',
+          name: 'Hibiscus Coast'
+        }
+      },
       {
         '@type': 'City',
         name: 'Auckland',
@@ -296,15 +320,15 @@ const SEO: React.FC<SEOProps> = ({
 
       {/* Additional SEO Meta Tags */}
       <meta name="geo.region" content="NZ-AUK" />
-      <meta name="geo.placename" content="Auckland" />
-      <meta name="geo.position" content="-36.8485;174.7633" />
-      <meta name="ICBM" content="-36.8485, 174.7633" />
+      <meta name="geo.placename" content="Hibiscus Coast" />
+      <meta name="geo.position" content="-36.6020;174.6929" />
+      <meta name="ICBM" content="-36.6020, 174.6929" />
 
       {/* Business Information */}
-      <meta name="business:contact_data:street_address" content="Auckland" />
-      <meta name="business:contact_data:locality" content="Auckland" />
+      <meta name="business:contact_data:street_address" content="Orewa" />
+      <meta name="business:contact_data:locality" content="Hibiscus Coast" />
       <meta name="business:contact_data:region" content="Auckland" />
-      <meta name="business:contact_data:postal_code" content="1010" />
+      <meta name="business:contact_data:postal_code" content="0931" />
       <meta name="business:contact_data:country_name" content="New Zealand" />
       <meta name="business:contact_data:phone_number" content="+64220208415" />
       <meta name="business:contact_data:email" content="office@drwatts.co.nz" />

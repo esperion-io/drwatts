@@ -76,28 +76,34 @@ const Contact: React.FC = () => {
   };
 
   const businessHours = [
-    { day: 'Monday - Friday', hours: '7:00 AM - 6:00 PM' },
-    { day: 'Saturday', hours: '8:00 AM - 4:00 PM' },
+    { day: 'Monday - Friday', hours: '8:00 AM - 4:00 PM' },
+    { day: 'Saturday', hours: 'Emergency Only' },
     { day: 'Sunday', hours: 'Emergency Only' }
   ];
 
   const serviceAreas = [
+    'Orewa',
+    'Whangaparaoa',
+    'Red Beach',
+    'Silverdale',
+    'Millwater',
+    'Stanmore Bay',
+    'Army Bay',
+    'Hatfields Beach',
     'Auckland Central',
     'North Shore',
     'West Auckland',
     'South Auckland',
     'East Auckland',
-    'Waitakere',
-    'Manukau',
-    'Papakura'
+    'Waitakere'
   ];
 
   return (
     <>
       <Helmet>
-        <title>Contact Dr Watts Electrical Auckland | Get Free Quote & Emergency Service</title>
-        <meta name="description" content="Contact Dr Watts for electrical services in Auckland. Get free quotes, emergency electrical repairs, and professional electrical installations. Call now!" />
-        <meta name="keywords" content="contact electrician auckland, electrical quote, emergency electrician, electrical services auckland, dr watts contact" />
+        <title>Contact Dr Watts Electrical Hibiscus Coast | Get Free Quote & Emergency Service</title>
+        <meta name="description" content="Contact Dr Watts for electrical services on the Hibiscus Coast and Auckland. Get free quotes, emergency electrical repairs, and professional electrical installations. Call now!" />
+        <meta name="keywords" content="contact electrician hibiscus coast, orewa electrician, whangaparaoa electrician, electrical quote, emergency electrician, electrical services auckland, dr watts contact" />
       </Helmet>
 
       {/* Hero Section */}
@@ -108,7 +114,7 @@ const Contact: React.FC = () => {
               Get Your <span className="text-yellow-400">Free Electrical Quote</span> Today
             </h1>
             <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-              Professional electrical services across Auckland. Emergency repairs, installations, and upgrades by licensed electricians.
+              Professional electrical services on the Hibiscus Coast and greater Auckland. Emergency repairs, installations, and upgrades by licensed electricians.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -153,7 +159,7 @@ const Contact: React.FC = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Request Your Free Quote
+                Having power troubles? Contact the doctor
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 Fill out the form below and we'll get back to you within 2 hours during business hours.
@@ -247,21 +253,16 @@ const Contact: React.FC = () => {
                     <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
                       Service Required *
                     </label>
-                    <select
+                    <input
+                      type="text"
                       id="service"
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
                       required
+                      placeholder="Enter the service you need"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                    >
-                      <option value="">Select a service</option>
-                      {services.map((service) => (
-                        <option key={service} value={service}>
-                          {service}
-                        </option>
-                      ))}
-                    </select>
+                    />
                   </div>
                   <div>
                     <label htmlFor="urgency" className="block text-sm font-medium text-gray-700 mb-2">
@@ -364,8 +365,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Service Area</h3>
-                    <p className="text-gray-600 mb-2">We serve all of Auckland</p>
-                    <p className="text-green-600 font-medium">Greater Auckland Region</p>
+                    <p className="text-gray-600 mb-2">Primary: Hibiscus Coast | Also serving Auckland</p>
+                    <p className="text-green-600 font-medium">Hibiscus Coast & Greater Auckland</p>
                   </div>
                 </div>
               </div>
@@ -383,12 +384,6 @@ const Contact: React.FC = () => {
                       <span className="font-medium text-gray-900">{schedule.hours}</span>
                     </div>
                   ))}
-                </div>
-                <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-800 text-sm font-medium">
-                    <Zap className="h-4 w-4 inline mr-1" />
-                    Emergency services available 24/7 for urgent electrical issues
-                  </p>
                 </div>
               </div>
 
@@ -420,7 +415,7 @@ const Contact: React.FC = () => {
               Our Service Area
             </h2>
             <p className="text-xl text-gray-600">
-              Professional electrical services across Greater Auckland
+              Professional electrical services on the Hibiscus Coast and Greater Auckland
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -432,13 +427,13 @@ const Contact: React.FC = () => {
                 {
                   position: { lat: -36.5849, lng: 174.6926 },
                   title: 'Dr Watts Electrical - Orewa',
-                  info: 'Professional electrical services serving Hibiscus Coast and all Auckland areas'
+                  info: 'Professional electrical services - Primary service area: Hibiscus Coast, also serving Auckland'
                 }
               ]}
               serviceAreas={[
                 {
                   center: { lat: -36.5849, lng: 174.6926 },
-                  radius: 50000,
+                  radius: 20000,
                   name: 'Service Coverage Area'
                 }
               ]}
@@ -455,7 +450,7 @@ const Contact: React.FC = () => {
               Why Choose Dr Watts?
             </h2>
             <p className="text-xl text-gray-600">
-              Trusted by Auckland homeowners for reliable electrical services
+              Trusted by Hibiscus Coast and Auckland homeowners for reliable electrical services
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -484,8 +479,8 @@ const Contact: React.FC = () => {
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="font-bold text-lg text-gray-900 mb-2">Quality Guaranteed</h3>
-              <p className="text-gray-600">All work comes with our quality guarantee</p>
+              <h3 className="font-bold text-lg text-gray-900 mb-2">Professional Standards</h3>
+              <p className="text-gray-600">All work completed to professional industry standards</p>
             </div>
           </div>
         </div>

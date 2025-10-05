@@ -155,7 +155,7 @@ const RCDGuidance: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>RCD Safety Switch Guidance Auckland | RCD Troubleshooting & Repair</title>
+        <title>RCD Safety Switch Guidance Hibiscus Coast | RCD Troubleshooting & Repair</title>
         <meta name="description" content="Complete RCD safety switch guidance for Auckland homes. Troubleshooting tips, testing procedures, and professional RCD repair services. Keep your family safe." />
         <meta name="keywords" content="RCD safety switch auckland, RCD troubleshooting, safety switch repair, RCD testing, electrical safety, RCBO, residual current device" />
       </Helmet>

@@ -52,7 +52,7 @@ const SwitchboardUpgrades: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Switchboard Upgrades Auckland | Professional Electrical Panel Installation</title>
+        <title>Switchboard Upgrades Hibiscus Coast | Professional Electrical Panel Installation</title>
         <meta name="description" content="Professional switchboard upgrades in Auckland. RCD installation, modern electrical panels, safety compliance. Licensed electricians, free quotes available." />
         <meta name="keywords" content="switchboard upgrade auckland, electrical panel upgrade, RCD installation, electrical safety, circuit breaker upgrade, electrical compliance" />
       </Helmet>

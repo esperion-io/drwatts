@@ -118,7 +118,7 @@ const Renovations: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Renovation Electrical Services Auckland | Home Electrical Upgrades</title>
+        <title>Renovation Electrical Services Hibiscus Coast | Home Electrical Upgrades</title>
         <meta name="description" content="Expert electrical services for home renovations in Auckland. Kitchen, bathroom, and living area electrical upgrades. Safety compliance, modern wiring. Free quotes." />
         <meta name="keywords" content="renovation electrical auckland, kitchen electrical, bathroom electrical, home electrical upgrade, rewiring, electrical renovation, safety upgrade" />
       </Helmet>
@@ -365,8 +365,8 @@ const Renovations: React.FC = () => {
                 <div className="flex items-start space-x-4">
                   <CheckCircle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Quality Guarantee</h3>
-                    <p className="text-gray-600">Comprehensive warranties on all electrical work and materials used.</p>
+                    <h3 className="font-semibold text-gray-900 mb-2">Quality Workmanship</h3>
+                    <p className="text-gray-600">Professional electrical work completed to industry standards with quality materials.</p>
                   </div>
                 </div>
               </div>

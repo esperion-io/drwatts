@@ -87,7 +87,7 @@ const About: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Dr Watts Electrical Auckland | Licensed Electricians & Company History</title>
+        <title>About Dr Watts Electrical Hibiscus Coast | Licensed Electricians & Company History</title>
         <meta name="description" content="Learn about Dr Watts Electrical - Auckland's trusted electrical service company. Meet our licensed electricians, company history, and commitment to quality." />
         <meta name="keywords" content="about dr watts electrical, auckland electricians, licensed electricians, electrical company auckland, electrical services team" />
       </Helmet>
@@ -348,19 +348,19 @@ const About: React.FC = () => {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
                 <CheckCircle className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Warranty Backed</h3>
+                <h3 className="text-xl font-bold text-gray-900">Quality Workmanship</h3>
               </div>
               <p className="text-gray-600">
-                All our work comes with comprehensive warranties for your complete peace of mind.
+                All our work is completed to professional standards using quality materials and expert craftsmanship.
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
                 <Star className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Customer Satisfaction</h3>
+                <h3 className="text-xl font-bold text-gray-900">Customer Satisfaction Focus</h3>
               </div>
               <p className="text-gray-600">
-                Your satisfaction is guaranteed. We're not happy until you're completely satisfied with our work.
+                We strive for excellence in every job and work hard to ensure you're completely satisfied with our service.
               </p>
             </div>
           </div>

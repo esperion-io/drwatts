@@ -37,13 +37,6 @@ const Home: React.FC = () => {
       alt: 'Home renovation electrical work',
       title: 'Renovation Electrical',
       description: 'Complete electrical solutions for home renovations'
-    },
-    {
-      id: '5',
-      src: 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=emergency%20electrical%20service%2024%20hour%20electrician%20van%20professional%20electrical%20repair%20urgent%20electrical%20work&image_size=landscape_16_9',
-      alt: '24/7 emergency electrical services',
-      title: 'Emergency Services',
-      description: '24/7 emergency electrical repairs and support'
     }
   ];
   
@@ -86,7 +79,7 @@ const Home: React.FC = () => {
       description: 'Professional diagnostic and repair services to identify and fix electrical issues quickly and safely.',
       icon: Clock,
       href: '/services/fault-finding',
-      features: ['Quick Diagnosis', 'Expert Repairs', '24/7 Emergency']
+      features: ['Quick Diagnosis', 'Expert Repairs']
     },
     {
       id: 'rcd-guidance',
@@ -103,9 +96,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Professional Electrician Auckland | Dr Watts Electrical Services</title>
-        <meta name="description" content="Trusted electrical services in Auckland. Switchboard upgrades, LED lighting, new builds, renovations. Licensed electricians, 24/7 emergency service." />
-        <meta name="keywords" content="electrician auckland, electrical services, switchboard upgrade, LED lighting, new builds, renovations, fault finding, RCD safety" />
+        <title>Professional Electrician Hibiscus Coast | Dr Watts Electrical Services</title>
+        <meta name="description" content="Trusted electrical services on the Hibiscus Coast and Auckland. Switchboard upgrades, LED lighting, new builds, renovations. Licensed electricians, 24/7 emergency service." />
+        <meta name="keywords" content="electrician hibiscus coast, orewa electrician, whangaparaoa electrician, electrical services auckland, switchboard upgrade, LED lighting, new builds, renovations, fault finding, RCD safety" />
       </Helmet>
 
       {/* Hero Section */}
@@ -114,10 +107,10 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Professional <span className="text-yellow-400">Electrical Services</span> in Auckland
+                Professional <span className="text-yellow-400">Electrical Services</span> on the Hibiscus Coast
               </h1>
               <p className="text-xl text-black-100 mb-8 leading-relaxed">
-                Licensed electricians providing safe, reliable electrical solutions for homes and businesses across Auckland. From switchboard upgrades to emergency repairs.
+                Licensed electricians providing safe, reliable electrical solutions for homes and businesses on the Hibiscus Coast and greater Auckland. From switchboard upgrades to emergency repairs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -128,7 +121,7 @@ const Home: React.FC = () => {
                 </Link>
                 <a
                   href="tel:+64220208415"
-                  className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
+                  className="bg-blue-600 border-2 border-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 hover:border-blue-700 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
                   <span>Call Now</span>
@@ -139,10 +132,7 @@ const Home: React.FC = () => {
                   <Shield className="h-5 w-5 text-yellow-400" />
                   <span>Licensed & Insured</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="h-5 w-5 text-yellow-400" />
-                  <span>24/7 Emergency</span>
-                </div>
+
               </div>
             </div>
             <div className="relative">
@@ -150,6 +140,56 @@ const Home: React.FC = () => {
                 <PortfolioCarousel images={portfolioImages} />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Electrical Services
+            </h2>
+            <p className="text-xl text-gray-600">
+              Comprehensive electrical solutions for all your needs
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service) => {
+              const IconComponent = service.icon;
+              return (
+                <div key={service.id} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <IconComponent className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <ul className="space-y-2 mb-6">
+                    {service.features.map((feature, index) => (
+                      <li key={index} className="flex items-center space-x-2 text-sm text-gray-600">
+                        <CheckCircle className="h-4 w-4 text-green-500" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    to={service.href}
+                    className="inline-block w-full bg-blue-600 text-white text-center px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
+                    onClick={() => {
+                      // Smooth scroll to top when navigating to service pages
+                      setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }, 100);
+                    }}
+                  >Learn More</Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -162,7 +202,7 @@ const Home: React.FC = () => {
               What Our Customers Say
             </h2>
             <p className="text-xl text-gray-600">
-              Trusted by Auckland homeowners and businesses
+              Trusted by Hibiscus Coast and Auckland homeowners and businesses
             </p>
           </div>
           
@@ -298,69 +338,19 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Electrical Services
-            </h2>
-            <p className="text-xl text-gray-600">
-              Comprehensive electrical solutions for all your needs
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => {
-              const IconComponent = service.icon;
-              return (
-                <div key={service.id} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <IconComponent className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
-                  </div>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feature, index) => (
-                      <li key={index} className="flex items-center space-x-2 text-sm text-gray-600">
-                        <CheckCircle className="h-4 w-4 text-green-500" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    to={service.href}
-                    className="inline-block w-full bg-blue-600 text-white text-center px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200"
-                    onClick={() => {
-                      // Smooth scroll to top when navigating to service pages
-                      setTimeout(() => {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }, 100);
-                    }}
-                  >Learn More</Link>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Map Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Serving All of Auckland
+                Serving the Hibiscus Coast & Auckland
               </h2>
               <p className="text-xl text-gray-600 mb-6">
-                We provide professional electrical services across all Auckland areas, from the CBD to the North Shore and beyond.
+                Our primary service area is the Hibiscus Coast, and we also provide professional electrical services across Auckland areas.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {['Auckland CBD', 'North Shore', 'West Auckland', 'South Auckland', 'East Auckland', 'Waitakere'].map((area) => (
+                {['Orewa', 'Whangaparaoa', 'Red Beach', 'Silverdale', 'Auckland CBD', 'North Shore', 'West Auckland', 'South Auckland'].map((area) => (
                   <div key={area} className="flex items-center space-x-2">
                     <MapPin className="h-4 w-4 text-blue-600" />
                     <span className="text-gray-700">{area}</span>
@@ -383,7 +373,7 @@ const Home: React.FC = () => {
                   {
                     position: { lat: -36.5849, lng: 174.6926 },
                     title: 'Dr Watts Electrical - Orewa',
-                    info: 'Professional electrical services serving Hibiscus Coast and surrounding Auckland areas'
+                    info: 'Primary service area: Hibiscus Coast - Professional electrical services for Orewa, Whangaparaoa, and surrounding areas'
                   },
                   {
                     position: { lat: -36.7755, lng: 174.7348 },
@@ -399,8 +389,8 @@ const Home: React.FC = () => {
                 serviceAreas={[
                   {
                     center: { lat: -36.5849, lng: 174.6926 },
-                    radius: 50000,
-                    name: 'Primary Service Area'
+                    radius: 20000,
+                    name: 'Hibiscus Coast - Primary Service Area'
                   }
                 ]}
               />
@@ -416,7 +406,7 @@ const Home: React.FC = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contact Dr Watts today for professional electrical services you can trust. Free quotes, emergency service available.
+            Contact Dr Watts today for professional electrical services you can trust.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -430,7 +420,7 @@ const Home: React.FC = () => {
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call Emergency: 022 020 8415</span>
+              <span>Call: 022 020 8415</span>
             </a>
           </div>
         </div>

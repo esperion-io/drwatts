@@ -86,7 +86,7 @@ const NewBuilds: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>New Build Electrical Services Auckland | Complete Electrical Installation</title>
+        <title>New Build Electrical Services Hibiscus Coast | Complete Electrical Installation</title>
         <meta name="description" content="Complete electrical services for new builds in Auckland. Professional design, installation, and compliance. Smart home ready, safety compliant. Free quotes." />
         <meta name="keywords" content="new build electrical auckland, electrical installation, building electrical, electrical design, smart home wiring, electrical compliance, new construction" />
       </Helmet>
@@ -289,8 +289,8 @@ const NewBuilds: React.FC = () => {
                 <div className="flex items-start space-x-4">
                   <Shield className="h-6 w-6 text-purple-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Quality Guarantee</h3>
-                    <p className="text-gray-600">All our work is backed by comprehensive warranties and ongoing support.</p>
+                    <h3 className="font-semibold text-gray-900 mb-2">Quality Workmanship</h3>
+                    <p className="text-gray-600">All our work is completed to professional standards with ongoing support available.</p>
                   </div>
                 </div>
               </div>

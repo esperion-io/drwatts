@@ -5,7 +5,7 @@ import LogoImage from '../assets/drwattslogo.svg';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             </div>
             
             <p className="text-gray-300 mb-6 max-w-md">
-              Auckland's trusted electrical service company. Licensed electricians providing safe, reliable, and professional electrical services since 2008.
+              Hibiscus Coast's trusted electrical service company. Licensed electricians providing safe, reliable, and professional electrical services since 2008.
             </p>
             
             <div className="space-y-3">
@@ -41,11 +41,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-yellow-400" />
-                <span className="text-gray-300">Serving Greater Auckland</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-yellow-400" />
-                <span className="text-gray-300">24/7 Emergency Service</span>
+                <span className="text-gray-300">Serving Hibiscus Coast and Greater Auckland</span>
               </div>
             </div>
           </div>
@@ -124,11 +120,7 @@ const Footer: React.FC = () => {
                   Contact
                 </Link>
               </li>
-              <li>
-                <a href="tel:+64220208415" className="text-gray-300 hover:text-white transition-colors">
-                  Emergency Service
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
