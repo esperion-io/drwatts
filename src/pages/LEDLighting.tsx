@@ -312,25 +312,7 @@ const LEDLighting: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gray-50 rounded-lg shadow-lg p-8">
-            <div className="flex justify-center mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
-              ))}
-            </div>
-            <blockquote className="text-xl text-gray-700 mb-6 italic">
-              "Dr Watts installed LED downlights throughout our home. The difference in light quality is amazing, and our electricity bill has dropped significantly. Professional service and great value for money."
-            </blockquote>
-            <div className="text-gray-600">
-              <p className="font-medium">Mike T.</p>
-              <p className="text-sm">Verified Customer - Facebook</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-green-900 text-white">

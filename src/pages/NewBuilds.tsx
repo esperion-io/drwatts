@@ -319,25 +319,7 @@ const NewBuilds: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gray-50 rounded-lg shadow-lg p-8">
-            <div className="flex justify-center mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
-              ))}
-            </div>
-            <blockquote className="text-xl text-gray-700 mb-6 italic">
-              "Dr Watts handled all the electrical work for our new build. From the initial design consultation to the final inspection, everything was professional and completed on time. The smart home wiring they installed has been fantastic."
-            </blockquote>
-            <div className="text-gray-600">
-              <p className="font-medium">David & Emma K.</p>
-              <p className="text-sm">New Build Project - Verified Customer</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-purple-900 text-white">
