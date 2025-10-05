@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import { cn } from '../lib/utils';
@@ -6,8 +6,20 @@ import LogoImage from '../assets/drwattslogo.svg';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Scroll event listener to minimize logo on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50); // Minimize logo after scrolling 50px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -74,7 +86,7 @@ const Header: React.FC = () => {
             <img 
               src={LogoImage} 
               alt="Dr Watts Electrical Services" 
-              className="h-16 sm:h-20 lg:h-24 w-auto object-contain"
+              className={`h-16 sm:h-20 ${isScrolled ? 'lg:h-12' : 'lg:h-24'} w-auto object-contain transition-all duration-300 ease-in-out`}
             />
           </Link>
           {/* Menu button - Right Side - Mobile Only */}
