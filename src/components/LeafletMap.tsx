@@ -178,15 +178,15 @@ const LeafletMap: React.FC<LeafletMapProps> = ({
   }
 
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <div 
         ref={mapRef} 
-        style={{ height, width: '100%' }}
+        style={{ height, width: '100%', position: 'relative', zIndex: 10 }}
         className="rounded-lg overflow-hidden shadow-lg"
       />
       {!isLoaded && (
         <div 
-          className="absolute inset-0 bg-gray-100 border border-gray-300 rounded-lg flex items-center justify-center"
+          className="absolute inset-0 bg-gray-100 border border-gray-300 rounded-lg flex items-center justify-center z-20"
         >
           <div className="text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-2"></div>

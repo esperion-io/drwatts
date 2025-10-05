@@ -156,8 +156,8 @@ const RCDGuidance: React.FC = () => {
     <>
       <Helmet>
         <title>RCD Safety Switch Guidance Hibiscus Coast | RCD Troubleshooting & Repair</title>
-        <meta name="description" content="Complete RCD safety switch guidance for Auckland homes. Troubleshooting tips, testing procedures, and professional RCD repair services. Keep your family safe." />
-        <meta name="keywords" content="RCD safety switch auckland, RCD troubleshooting, safety switch repair, RCD testing, electrical safety, RCBO, residual current device" />
+        <meta name="description" content="Complete RCD safety switch guidance for Hibiscus Coast homes. Troubleshooting tips, testing procedures, and professional RCD repair services. Keep your family safe." />
+        <meta name="keywords" content="RCD safety switch hibiscus coast, RCD troubleshooting, safety switch repair, RCD testing, electrical safety, RCBO, residual current device" />
       </Helmet>
 
       {/* Hero Section */}
@@ -177,7 +177,7 @@ const RCDGuidance: React.FC = () => {
                   className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>RCD Emergency</span>
+                  <span>RCD Service</span>
                 </a>
                 <Link
                   to="/contact#contact-form"
@@ -488,7 +488,7 @@ const RCDGuidance: React.FC = () => {
                 href="tel:+64220208415"
                 className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200"
               >
-                Emergency Call: 022 020 8415
+                Call Now: 022 020 8415
               </a>
             </div>
           </div>
@@ -555,7 +555,7 @@ const RCDGuidance: React.FC = () => {
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Emergency RCD repairs</span>
+                  <span className="text-gray-700">Professional RCD repairs</span>
                 </li>
               </ul>
               <div className="space-y-3">
@@ -618,7 +618,7 @@ const RCDGuidance: React.FC = () => {
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-900 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Emergency: 022 020 8415</span>
+              <span>Call: 022 020 8415</span>
             </a>
           </div>
         </div>

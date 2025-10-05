@@ -26,7 +26,7 @@ const FaultFinding: React.FC = () => {
     {
       icon: Shield,
       title: 'Safety Repairs',
-      description: 'Emergency repairs for electrical safety hazards and dangerous faults.',
+      description: 'Professional repairs for electrical safety hazards and dangerous faults.',
       details: ['RCD tripping', 'Burning smells', 'Sparking outlets', 'Hot switches']
     }
   ];
@@ -53,19 +53,19 @@ const FaultFinding: React.FC = () => {
     {
       problem: 'Burning Smell from Electrical',
       causes: ['Overheating wires', 'Arcing connections', 'Overloaded circuits', 'Faulty devices'],
-      urgency: 'Emergency',
-      description: 'Immediate danger - turn off power and call emergency electrician.'
+      urgency: 'High',
+      description: 'Immediate danger - turn off power and call a professional electrician.'
     },
     {
       problem: 'Sparking from Outlets or Switches',
       causes: ['Loose connections', 'Damaged wiring', 'Water damage', 'Age deterioration'],
-      urgency: 'Emergency',
+      urgency: 'High',
       description: 'Serious fire hazard requiring immediate professional attention.'
     },
     {
       problem: 'Electric Shocks from Appliances',
       causes: ['Faulty earthing', 'Damaged insulation', 'Water ingress', 'Appliance fault'],
-      urgency: 'Emergency',
+      urgency: 'High',
       description: 'Potentially life-threatening - requires immediate electrical inspection.'
     }
   ];
@@ -97,7 +97,7 @@ const FaultFinding: React.FC = () => {
     }
   ];
 
-  const emergencySigns = [
+  const safetySigns = [
     'Burning smell from electrical equipment',
     'Sparks from outlets, switches, or appliances',
     'Electric shocks from touching appliances',
@@ -110,8 +110,7 @@ const FaultFinding: React.FC = () => {
 
   const getUrgencyColor = (urgency: string) => {
     switch (urgency) {
-      case 'Emergency': return 'bg-red-100 text-red-800 border-red-200';
-      case 'High': return 'bg-orange-100 text-orange-800 border-orange-200';
+      case 'High': return 'bg-red-100 text-red-800 border-red-200';
       case 'Medium': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
@@ -120,9 +119,9 @@ const FaultFinding: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Electrical Fault Finding Hibiscus Coast | Emergency Electrical Repairs</title>
-        <meta name="description" content="Expert electrical fault finding and repair services in Auckland. 24/7 emergency electrician for power outages, circuit problems, and electrical faults. Fast diagnosis and repair." />
-        <meta name="keywords" content="electrical fault finding auckland, emergency electrician, electrical repairs, power outage, circuit problems, electrical troubleshooting, electrical diagnosis" />
+        <title>Electrical Fault Finding Hibiscus Coast | Professional Electrical Repairs</title>
+        <meta name="description" content="Expert electrical fault finding and repair services on the Hibiscus Coast. Professional electrician for power outages, circuit problems, and electrical faults. Fast diagnosis and repair." />
+        <meta name="keywords" content="electrical fault finding hibiscus coast, professional electrician, electrical repairs, power outage, circuit problems, electrical troubleshooting, electrical diagnosis" />
       </Helmet>
 
       {/* Hero Section */}
@@ -134,7 +133,7 @@ const FaultFinding: React.FC = () => {
                 <span className="text-yellow-400">Fast & Reliable</span> Electrical Fault Finding
               </h1>
               <p className="text-xl text-red-100 mb-8 leading-relaxed">
-                Experiencing electrical problems? Our expert electricians use advanced diagnostic equipment to quickly identify and fix electrical faults. Available for emergency callouts 24/7.
+                Experiencing electrical problems? Our expert electricians use advanced diagnostic equipment to quickly identify and fix electrical faults during business hours.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -142,7 +141,7 @@ const FaultFinding: React.FC = () => {
                   className="bg-yellow-400 text-red-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>Emergency Call</span>
+                  <span>Call Now</span>
                 </a>
                 <Link
                   to="/contact#contact-form"
@@ -154,7 +153,7 @@ const FaultFinding: React.FC = () => {
               <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center space-x-2">
                   <Clock className="h-5 w-5 text-yellow-400" />
-                  <span>24/7 Emergency Service</span>
+                  <span>Professional Service</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Shield className="h-5 w-5 text-yellow-400" />
@@ -177,21 +176,21 @@ const FaultFinding: React.FC = () => {
         </div>
       </section>
 
-      {/* Emergency Warning */}
+      {/* Safety Warning */}
       <section className="py-8 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center space-x-4">
             <AlertTriangle className="h-8 w-8 text-yellow-400" />
             <div className="text-center">
-              <h3 className="text-xl font-bold">Electrical Emergency?</h3>
-              <p className="text-red-100">If you smell burning, see sparks, or feel electric shocks - turn off power and call immediately!</p>
+              <h3 className="text-xl font-bold">Electrical Safety First</h3>
+              <p className="text-red-100">If you smell burning, see sparks, or feel electric shocks - turn off power and call a professional electrician!</p>
             </div>
-            <a
-              href="tel:+64220208415"
+            <Link
+              to="/contact#contact-form"
               className="bg-yellow-400 text-red-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200"
             >
-              Call Now
-            </a>
+              Get Help
+            </Link>
           </div>
         </div>
       </section>
@@ -272,20 +271,20 @@ const FaultFinding: React.FC = () => {
         </div>
       </section>
 
-      {/* Emergency Signs */}
+      {/* Safety Signs */}
       <section className="py-16 bg-red-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              When to Call an Emergency Electrician
+              When to Call a Professional Electrician
             </h2>
             <p className="text-xl text-gray-600">
-              These signs indicate immediate electrical dangers requiring urgent attention
+              These signs indicate electrical dangers requiring professional attention
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {emergencySigns.map((sign, index) => (
+              {safetySigns.map((sign, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">{sign}</span>
@@ -294,14 +293,14 @@ const FaultFinding: React.FC = () => {
             </div>
             <div className="mt-8 text-center">
               <p className="text-gray-600 mb-4">
-                If you notice any of these signs, turn off the power at the main switch and call immediately.
+                If you notice any of these signs, turn off the power at the main switch and contact a professional electrician.
               </p>
-              <a
-                href="tel:+64220208415"
-                className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200"
+              <Link
+                to="/contact#contact-form"
+                className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors duration-200"
               >
-                Emergency Call: 022 020 8415
-              </a>
+                Contact Us: 022 020 8415
+              </Link>
             </div>
           </div>
         </div>
@@ -382,7 +381,7 @@ const FaultFinding: React.FC = () => {
                   href="tel:+64220208415"
                   className="block w-full bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors duration-200 text-center"
                 >
-                  Call for Emergency Service
+                  Call for Professional Service
                 </a>
                 <Link
                   to="/contact#contact-form"
@@ -393,7 +392,7 @@ const FaultFinding: React.FC = () => {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-sm text-gray-500">
-                  Available 24/7 for electrical emergencies
+                  Professional electrical services during business hours
                 </p>
               </div>
             </div>
@@ -402,24 +401,7 @@ const FaultFinding: React.FC = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gray-50 rounded-lg shadow-lg p-8">
-            <div className="flex justify-center mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
-              ))}
-            </div>
-            <blockquote className="text-xl text-gray-700 mb-6 italic">
-              "Had a power outage in half our house on a Sunday evening. Dr Watts came out within an hour, quickly found the fault in our switchboard, and had everything working again. Excellent service and very reasonable pricing."
-            </blockquote>
-            <div className="text-gray-600">
-              <p className="font-medium">James R.</p>
-              <p className="text-sm">Emergency Fault Finding - Verified Customer</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-red-900 text-white">
@@ -436,7 +418,7 @@ const FaultFinding: React.FC = () => {
               className="bg-yellow-400 text-red-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Emergency: 022 020 8415</span>
+              <span>Call: 022 020 8415</span>
             </a>
             <Link
               to="/contact#contact-form"

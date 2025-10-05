@@ -48,7 +48,7 @@ const LEDLighting: React.FC = () => {
       type: 'Panel Lights',
       description: 'Slim profile lights ideal for offices and commercial spaces',
       applications: ['Offices', 'Retail spaces', 'Schools', 'Hospitals'],
-      features: ['Even light distribution', 'Flicker-free operation', 'Emergency backup options']
+      features: ['Even light distribution', 'Flicker-free operation', 'Dimming capabilities']
     },
     {
       type: 'Outdoor Lighting',
@@ -86,8 +86,8 @@ const LEDLighting: React.FC = () => {
     <>
       <Helmet>
         <title>LED Lighting Upgrades Hibiscus Coast | Energy Efficient Lighting Installation</title>
-        <meta name="description" content="Professional LED lighting upgrades on the Hibiscus Coast and Auckland. Save up to 80% on energy costs. Downlights, strip lighting, outdoor LED installation. Free quotes available." />
-        <meta name="keywords" content="LED lighting hibiscus coast, orewa LED lighting, whangaparaoa LED lighting, LED downlights, energy efficient lighting, LED strip lights, outdoor LED lighting, lighting upgrade, electrician auckland" />
+        <meta name="description" content="Professional LED lighting upgrades on the Hibiscus Coast. Save up to 80% on energy costs. Downlights, strip lighting, outdoor LED installation. Free quotes available." />
+        <meta name="keywords" content="LED lighting hibiscus coast, orewa LED lighting, whangaparaoa LED lighting, LED downlights, energy efficient lighting, LED strip lights, outdoor LED lighting, lighting upgrade, red beach electrician, silverdale electrician" />
       </Helmet>
 
       {/* Hero Section */}
@@ -106,7 +106,7 @@ const LEDLighting: React.FC = () => {
                   to="/contact"
                   className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center"
                 >
-                  Get Free Quote
+                  Contact The Doctor
                 </Link>
                 <a
                   href="tel:+64220208415"
@@ -346,7 +346,7 @@ const LEDLighting: React.FC = () => {
               to="/contact"
               className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
-              Get Free Quote
+              Contact The Doctor
             </Link>
             <a
               href="tel:+64220208415"

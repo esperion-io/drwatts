@@ -191,7 +191,7 @@ Data is managed through JSON files and React components:
       "title": "Switchboard Upgrades",
       "description": "Enhance safety and reliability with modern switchboard installations",
       "features": ["RCD Integration", "Surge Protection", "Arc Fault Detection"],
-      "ctaText": "Get Quote for Switchboard Upgrade",
+      "ctaText": "Contact The Doctor for Switchboard Upgrade",
       "estimatedDuration": "4-8 hours",
       "compliance": "NZ Electrical Standards"
     }
@@ -240,7 +240,7 @@ Data is managed through JSON files and React components:
     "siteName": "Dr Watts Electrical Services Ltd",
     "baseUrl": "https://drwatts.github.io",
     "defaultTitle": "Professional Electrician Auckland | Dr Watts Electrical Services",
-    "defaultDescription": "Trusted electrical services in Auckland. Switchboard upgrades, LED lighting, new builds, renovations. Licensed electricians, 24/7 emergency service.",
+    "defaultDescription": "Trusted electrical services in Auckland. Switchboard upgrades, LED lighting, new builds, renovations. Licensed electricians.",
     "keywords": ["electrician auckland", "electrical services", "switchboard upgrade", "LED lighting"],
     "localBusiness": {
       "name": "Dr Watts Electrical Services Ltd",

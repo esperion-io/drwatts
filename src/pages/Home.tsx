@@ -97,8 +97,8 @@ const Home: React.FC = () => {
     <>
       <Helmet>
         <title>Professional Electrician Hibiscus Coast | Dr Watts Electrical Services</title>
-        <meta name="description" content="Trusted electrical services on the Hibiscus Coast and Auckland. Switchboard upgrades, LED lighting, new builds, renovations. Licensed electricians, 24/7 emergency service." />
-        <meta name="keywords" content="electrician hibiscus coast, orewa electrician, whangaparaoa electrician, electrical services auckland, switchboard upgrade, LED lighting, new builds, renovations, fault finding, RCD safety" />
+        <meta name="description" content="Trusted electrical services on the Hibiscus Coast. Switchboard upgrades, LED lighting, new builds, renovations. Licensed electricians." />
+        <meta name="keywords" content="electrician hibiscus coast, orewa electrician, whangaparaoa electrician, red beach electrician, silverdale electrician, switchboard upgrade, LED lighting, new builds, renovations, fault finding, RCD safety" />
       </Helmet>
 
       {/* Hero Section */}
@@ -110,14 +110,14 @@ const Home: React.FC = () => {
                 Professional <span className="text-yellow-400">Electrical Services</span> on the Hibiscus Coast
               </h1>
               <p className="text-xl text-black-100 mb-8 leading-relaxed">
-                Licensed electricians providing safe, reliable electrical solutions for homes and businesses on the Hibiscus Coast and greater Auckland. From switchboard upgrades to emergency repairs.
+                Licensed electricians providing safe, reliable electrical solutions for homes and businesses on the Hibiscus Coast. From switchboard upgrades to renovations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact#contact-form"
                   className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center"
                 >
-                  Get Free Quote
+                  Contact The Doctor
                 </Link>
                 <a
                   href="tel:+64220208415"
@@ -202,7 +202,7 @@ const Home: React.FC = () => {
               What Our Customers Say
             </h2>
             <p className="text-xl text-gray-600">
-              Trusted by Hibiscus Coast and Auckland homeowners and businesses
+              Trusted by Hibiscus Coast homeowners and businesses
             </p>
           </div>
           
@@ -344,13 +344,13 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Serving the Hibiscus Coast & Auckland
+                Serving the Hibiscus Coast
               </h2>
               <p className="text-xl text-gray-600 mb-6">
-                Our primary service area is the Hibiscus Coast, and we also provide professional electrical services across Auckland areas.
+                Professional electrical services across the Hibiscus Coast region.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {['Orewa', 'Whangaparaoa', 'Red Beach', 'Silverdale', 'Auckland CBD', 'North Shore', 'West Auckland', 'South Auckland'].map((area) => (
+                {['Orewa', 'Whangaparaoa', 'Red Beach', 'Silverdale', 'Stanmore Bay', 'Army Bay'].map((area) => (
                   <div key={area} className="flex items-center space-x-2">
                     <MapPin className="h-4 w-4 text-blue-600" />
                     <span className="text-gray-700">{area}</span>
@@ -372,18 +372,8 @@ const Home: React.FC = () => {
                 markers={[
                   {
                     position: { lat: -36.5849, lng: 174.6926 },
-                    title: 'Dr Watts Electrical - Orewa',
-                    info: 'Primary service area: Hibiscus Coast - Professional electrical services for Orewa, Whangaparaoa, and surrounding areas'
-                  },
-                  {
-                    position: { lat: -36.7755, lng: 174.7348 },
-                    title: 'North Shore Services',
-                    info: 'Serving Takapuna, Milford, and North Shore communities'
-                  },
-                  {
-                    position: { lat: -36.8485, lng: 174.7633 },
-                    title: 'Auckland CBD Services',
-                    info: 'Covering Auckland CBD and central areas'
+                    title: 'Dr Watts Electrical - Esther Place',
+                    info: 'Professional electrical services - Serving the Hibiscus Coast from Esther Place'
                   }
                 ]}
                 serviceAreas={[
@@ -413,7 +403,7 @@ const Home: React.FC = () => {
               to="/contact#contact-form"
               className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
-              Get Free Quote
+              Contact The Doctor
             </Link>
             <a
               href="tel:+64220208415"

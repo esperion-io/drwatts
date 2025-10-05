@@ -33,7 +33,7 @@ const SwitchboardUpgrades: React.FC = () => {
     'Surge protection devices',
     'LED indicator lights',
     'Proper labeling and documentation',
-    'Emergency shutdown capabilities',
+    'Manual shutdown capabilities',
     'Smart meter compatibility',
     'Expanded circuit capacity'
   ];
@@ -53,8 +53,8 @@ const SwitchboardUpgrades: React.FC = () => {
     <>
       <Helmet>
         <title>Switchboard Upgrades Hibiscus Coast | Professional Electrical Panel Installation</title>
-        <meta name="description" content="Professional switchboard upgrades in Auckland. RCD installation, modern electrical panels, safety compliance. Licensed electricians, free quotes available." />
-        <meta name="keywords" content="switchboard upgrade auckland, electrical panel upgrade, RCD installation, electrical safety, circuit breaker upgrade, electrical compliance" />
+        <meta name="description" content="Professional switchboard upgrades on the Hibiscus Coast. RCD installation, modern electrical panels, safety compliance. Licensed electricians, free quotes available." />
+        <meta name="keywords" content="switchboard upgrade hibiscus coast, electrical panel upgrade, RCD installation, electrical safety, circuit breaker upgrade, electrical compliance" />
       </Helmet>
 
       {/* Hero Section */}
@@ -63,7 +63,7 @@ const SwitchboardUpgrades: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Professional <span className="text-yellow-400">Switchboard Upgrades</span> in Auckland
+                Professional <span className="text-yellow-400">Switchboard Upgrades</span> on the Hibiscus Coast
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Upgrade your electrical panel for enhanced safety, reliability, and compliance with modern standards. Our licensed electricians provide professional switchboard installations with RCD protection.
@@ -73,7 +73,7 @@ const SwitchboardUpgrades: React.FC = () => {
                   to="/contact"
                   className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center"
                 >
-                  Get Free Quote
+                  Contact The Doctor
                 </Link>
                 <a
                   href="tel:+64220208415"
@@ -159,17 +159,17 @@ const SwitchboardUpgrades: React.FC = () => {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Emergency Service Available</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Professional Service Available</h3>
               <p className="text-gray-600 mb-6">
-                If you're experiencing any electrical emergencies, don't wait. Our licensed electricians are available 24/7 for urgent switchboard issues.
+                Need a switchboard upgrade? Our licensed electricians provide professional installation and upgrade services during business hours.
               </p>
-              <a
-                href="tel:+64220208415"
-                className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors duration-200 flex items-center justify-center space-x-2 w-full"
+              <Link
+                to="/contact#contact-form"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2 w-full"
               >
                 <Phone className="h-5 w-5" />
-                <span>Call Emergency: 022 020 8415</span>
-              </a>
+                <span>Contact The Doctor: 022 020 8415</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -279,7 +279,7 @@ const SwitchboardUpgrades: React.FC = () => {
               to="/contact"
               className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
-              Get Free Quote
+              Contact The Doctor
             </Link>
             <a
               href="tel:+64220208415"

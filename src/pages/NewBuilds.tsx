@@ -87,8 +87,8 @@ const NewBuilds: React.FC = () => {
     <>
       <Helmet>
         <title>New Build Electrical Services Hibiscus Coast | Complete Electrical Installation</title>
-        <meta name="description" content="Complete electrical services for new builds in Auckland. Professional design, installation, and compliance. Smart home ready, safety compliant. Free quotes." />
-        <meta name="keywords" content="new build electrical auckland, electrical installation, building electrical, electrical design, smart home wiring, electrical compliance, new construction" />
+        <meta name="description" content="Complete electrical services for new builds on the Hibiscus Coast. Professional design, installation, and compliance. Smart home ready, safety compliant. Free quotes." />
+        <meta name="keywords" content="new build electrical hibiscus coast, electrical installation, building electrical, electrical design, smart home wiring, electrical compliance, new construction" />
       </Helmet>
 
       {/* Hero Section */}

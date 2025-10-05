@@ -13,8 +13,8 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
   title = 'Dr Watts Electrical Hibiscus Coast | Licensed Electricians & Electrical Services',
-  description = 'Professional electrical services on the Hibiscus Coast and Auckland. Licensed electricians for switchboard upgrades, LED lighting, new builds, renovations & emergency repairs. Free quotes available.',
-  keywords = 'electrician hibiscus coast, orewa electrician, whangaparaoa electrician, electrical services auckland, switchboard upgrade, LED lighting, electrical repairs, licensed electrician, emergency electrician',
+  description = 'Professional electrical services on the Hibiscus Coast. Licensed electricians for switchboard upgrades, LED lighting, new builds, renovations & electrical repairs. Free quotes available.',
+  keywords = 'electrician hibiscus coast, orewa electrician, whangaparaoa electrician, red beach electrician, silverdale electrician, switchboard upgrade, LED lighting, electrical repairs, licensed electrician, professional electrician',
   image = 'https://drwattselectrical.co.nz/og-image.jpg',
   url = 'https://drwattselectrical.co.nz',
   type = 'website',
@@ -27,7 +27,7 @@ const SEO: React.FC<SEOProps> = ({
     '@id': 'https://drwattselectrical.co.nz/#organization',
     name: 'Dr Watts Electrical',
     alternateName: 'Dr Watts Electrical Services',
-    description: 'Professional electrical services on the Hibiscus Coast and Auckland including switchboard upgrades, LED lighting installations, new builds, renovations, and emergency electrical repairs.',
+    description: 'Professional electrical services on the Hibiscus Coast including switchboard upgrades, LED lighting installations, new builds, renovations, and electrical repairs.',
     url: 'https://drwattselectrical.co.nz',
     telephone: '+64220208415',
     email: 'office@drwatts.co.nz',
@@ -47,7 +47,7 @@ const SEO: React.FC<SEOProps> = ({
       '@type': 'PostalAddress',
       streetAddress: 'Orewa',
       addressLocality: 'Hibiscus Coast',
-      addressRegion: 'Auckland',
+      addressRegion: 'Hibiscus Coast',
       postalCode: '0931',
       addressCountry: 'NZ'
     },
@@ -82,40 +82,19 @@ const SEO: React.FC<SEOProps> = ({
         }
       },
       {
-        '@type': 'City',
-        name: 'Auckland',
-        sameAs: 'https://en.wikipedia.org/wiki/Auckland'
-      },
-      {
         '@type': 'Place',
-        name: 'North Shore',
+        name: 'Red Beach',
         containedInPlace: {
-          '@type': 'City',
-          name: 'Auckland'
+          '@type': 'Place',
+          name: 'Hibiscus Coast'
         }
       },
       {
         '@type': 'Place',
-        name: 'West Auckland',
+        name: 'Silverdale',
         containedInPlace: {
-          '@type': 'City',
-          name: 'Auckland'
-        }
-      },
-      {
-        '@type': 'Place',
-        name: 'South Auckland',
-        containedInPlace: {
-          '@type': 'City',
-          name: 'Auckland'
-        }
-      },
-      {
-        '@type': 'Place',
-        name: 'East Auckland',
-        containedInPlace: {
-          '@type': 'City',
-          name: 'Auckland'
+          '@type': 'Place',
+          name: 'Hibiscus Coast'
         }
       }
     ],
@@ -126,7 +105,7 @@ const SEO: React.FC<SEOProps> = ({
       'Electrical Repairs',
       'New Build Electrical',
       'Renovation Electrical',
-      'Emergency Electrical Services',
+      'Professional Electrical Services',
       'RCD Safety Switch Installation',
       'Fault Finding',
       'Electrical Inspections'
@@ -224,7 +203,7 @@ const SEO: React.FC<SEOProps> = ({
           ratingValue: '5',
           bestRating: '5'
         },
-        reviewBody: 'Excellent service! Dr Watts upgraded our switchboard quickly and professionally. Highly recommend for any electrical work in Auckland.'
+        reviewBody: 'Excellent service! Dr Watts upgraded our switchboard quickly and professionally. Highly recommend for any electrical work on the Hibiscus Coast.'
       },
       {
         '@type': 'Review',
@@ -250,7 +229,7 @@ const SEO: React.FC<SEOProps> = ({
           ratingValue: '5',
           bestRating: '5'
         },
-        reviewBody: 'Fast emergency response when our power went out. Fixed the fault quickly and explained everything clearly.'
+        reviewBody: 'Professional service when our power went out. Fixed the fault quickly and explained everything clearly.'
       }
     ],
     sameAs: [
@@ -327,7 +306,7 @@ const SEO: React.FC<SEOProps> = ({
       {/* Business Information */}
       <meta name="business:contact_data:street_address" content="Orewa" />
       <meta name="business:contact_data:locality" content="Hibiscus Coast" />
-      <meta name="business:contact_data:region" content="Auckland" />
+      <meta name="business:contact_data:region" content="Hibiscus Coast" />
       <meta name="business:contact_data:postal_code" content="0931" />
       <meta name="business:contact_data:country_name" content="New Zealand" />
       <meta name="business:contact_data:phone_number" content="+64220208415" />
@@ -346,7 +325,7 @@ const SEO: React.FC<SEOProps> = ({
           '@id': 'https://drwattselectrical.co.nz/#website',
           url: 'https://drwattselectrical.co.nz',
           name: 'Dr Watts Electrical',
-          description: 'Professional electrical services in Auckland',
+          description: 'Professional electrical services on the Hibiscus Coast',
           publisher: {
             '@id': 'https://drwattselectrical.co.nz/#organization'
           },

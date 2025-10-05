@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Shield, Award, Users, Clock, CheckCircle, Phone, Star, Zap, Wrench, Home } from 'lucide-react';
 import InstagramFeed from '../components/InstagramFeed';
+import masterLogo from '../assets/master.png';
+import tradeLogo from '../assets/trade.png';
+import ewrbLogo from '../assets/ewrb.png';
 
 const About: React.FC = () => {
   const teamMembers = [
@@ -11,30 +14,25 @@ const About: React.FC = () => {
       role: 'Master Electrician & Founder',
       experience: '15+ Years',
       qualifications: ['Master Electrician License', 'Electrical Engineering Degree', 'Safety Certification'],
-      description: 'Leading Auckland\'s electrical industry with innovative solutions and exceptional service.'
+      description: 'Leading the Hibiscus Coast\'s electrical industry with innovative solutions and exceptional service.'
     }
   ];
 
   const certifications = [
     {
-      title: 'Electrical Workers Registration Board',
-      description: 'All our electricians are registered with the EWRB',
-      icon: Shield
-    },
-    {
-      title: 'Master Electricians Association',
+      title: 'Master Electricians',
       description: 'Proud members of New Zealand\'s premier electrical association',
-      icon: Award
+      logo: masterLogo
     },
     {
-      title: 'Worksafe New Zealand Approved',
-      description: 'Certified for safe electrical work practices',
-      icon: CheckCircle
+      title: 'Trade Group NZ',
+      description: 'Certified member of Trade Group New Zealand',
+      logo: tradeLogo
     },
     {
-      title: 'Public Liability Insurance',
-      description: '$2M public liability insurance coverage',
-      icon: Shield
+      title: 'Licensed with EWRB',
+      description: 'All our electricians are registered with the Electrical Workers Registration Board',
+      logo: ewrbLogo
     }
   ];
 
@@ -65,17 +63,17 @@ const About: React.FC = () => {
     {
       number: '500+',
       label: 'Happy Customers',
-      description: 'Satisfied homeowners across Auckland'
+      description: 'Satisfied homeowners across the Hibiscus Coast'
     },
     {
       number: '15+',
       label: 'Years Experience',
-      description: 'Serving Auckland\'s electrical needs'
+      description: 'Serving the Hibiscus Coast\'s electrical needs'
     },
     {
-      number: '24/7',
-      label: 'Emergency Service',
-      description: 'Always available when you need us'
+      number: '500+',
+      label: 'Happy Customers',
+      description: 'Satisfied clients across the Hibiscus Coast'
     },
     {
       number: '100%',
@@ -88,8 +86,8 @@ const About: React.FC = () => {
     <>
       <Helmet>
         <title>About Dr Watts Electrical Hibiscus Coast | Licensed Electricians & Company History</title>
-        <meta name="description" content="Learn about Dr Watts Electrical - Auckland's trusted electrical service company. Meet our licensed electricians, company history, and commitment to quality." />
-        <meta name="keywords" content="about dr watts electrical, auckland electricians, licensed electricians, electrical company auckland, electrical services team" />
+        <meta name="description" content="Learn about Dr Watts Electrical - Hibiscus Coast's trusted electrical service company. Meet our licensed electricians, company history, and commitment to quality." />
+        <meta name="keywords" content="about dr watts electrical, hibiscus coast electricians, licensed electricians, electrical company hibiscus coast, electrical services team" />
       </Helmet>
 
       {/* Hero Section */}
@@ -101,14 +99,14 @@ const About: React.FC = () => {
                 About <span className="text-yellow-400">Dr Watts Electrical</span>
               </h1>
               <p className="text-xl text-green-100 mb-8 leading-relaxed">
-                For over 15 years, Dr Watts Electrical has been Auckland's trusted partner for safe, reliable, and professional electrical services. We're more than just electricians - we're your electrical safety experts.
+                For over 15 years, Dr Watts Electrical has been the Hibiscus Coast's trusted partner for safe, reliable, and professional electrical services. We're more than just electricians - we're your electrical safety experts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
                   className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 text-center"
                 >
-                  Get Free Quote
+                  Contact The Doctor
                 </Link>
                 <a
                   href="tel:+64220208415"
@@ -134,137 +132,43 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Company Story */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Our Story
-              </h2>
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  At Dr Watts, we love every type of project. We take great pride in maintaining a consistently high-caliber level of work. Open and honest lines of communication with our clients during every step of the project is key to building relationships with successful outcomes. Customer satisfaction is our number one priority, so we have worked hard to meld creative problem-solving with excellent craftsmanship. We take on projects of all shapes and sizes as seen in our portfolio below, and believe in quality over quantity. Contact us to see how we can help you.
-                </p>
-              </div>
-            </div>
-            <div className="bg-green-50 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why We're Different</h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Education First</h4>
-                    <p className="text-gray-600">We believe in educating our customers about their electrical systems for better safety and decision-making.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Transparent Pricing</h4>
-                    <p className="text-gray-600">No hidden fees or surprise charges. You'll know exactly what you're paying for before we start.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Long-term Relationships</h4>
-                    <p className="text-gray-600">We're not just here for one job - we want to be your electrical partner for life.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements */}
+      {/* Instagram Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Achievements
+              Follow Us on Instagram
             </h2>
-            <p className="text-xl text-gray-600">
-              Numbers that reflect our commitment to excellence
+            <p className="text-xl text-gray-600 mb-8">
+              Stay connected and see our latest electrical projects and updates
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">{achievement.number}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{achievement.label}</h3>
-                <p className="text-gray-600">{achievement.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-gray-600">
-              Licensed professionals dedicated to your electrical safety
-            </p>
-          </div>
-          <div className="w-full">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="w-full bg-gray-50 rounded-lg p-6 box-border">
-                <div className="text-center mb-4">
-                  <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-12 w-12 text-green-600" />
+          
+          {/* Instagram Grid Placeholder */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+            {[1, 2, 3, 4, 5, 6].map((index) => (
+              <div key={index} className="aspect-square bg-gradient-to-br from-green-100 to-green-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group cursor-pointer">
+                <div className="text-center">
+                  <div className="bg-green-600 rounded-full p-4 mx-auto mb-2 w-16 h-16 flex items-center justify-center group-hover:bg-green-700 transition-colors duration-200">
+                    <Zap className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-green-600 font-medium">{member.role}</p>
-                  <p className="text-gray-500">{member.experience}</p>
-                </div>
-                <p className="text-gray-600 text-sm mb-4">{member.description}</p>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Qualifications:</h4>
-                  <ul className="space-y-1">
-                    {member.qualifications.map((qual, qualIndex) => (
-                      <li key={qualIndex} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span className="text-gray-600 text-sm">{qual}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-green-800 text-sm font-medium">Project {index}</p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Company Values */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Values
-            </h2>
-            <p className="text-xl text-gray-600">
-              The principles that guide everything we do
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {companyValues.map((value, index) => {
-              const IconComponent = value.icon;
-              return (
-                <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
-                  <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-8 w-8 text-green-600" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </div>
-              );
-            })}
+          
+          {/* Follow Button */}
+          <div className="text-center">
+            <a
+              href="#"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>Follow @drwattselectrical</span>
+            </a>
           </div>
         </div>
       </section>
@@ -280,13 +184,12 @@ const About: React.FC = () => {
               Fully licensed, insured, and certified for your peace of mind
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {certifications.map((cert, index) => {
-              const IconComponent = cert.icon;
               return (
                 <div key={index} className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
-                  <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-8 w-8 text-white" />
+                  <div className="flex items-center justify-center mx-auto mb-4">
+                    <img src={cert.logo} alt={cert.title} className="h-20 w-20 object-contain" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3">{cert.title}</h3>
                   <p className="text-gray-600 text-sm">{cert.description}</p>
@@ -297,90 +200,9 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Service Promise */}
-      <section className="py-16 bg-green-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Service Promise
-            </h2>
-            <p className="text-xl text-gray-600">
-              What you can expect when you choose Dr Watts Electrical
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center space-x-3 mb-4">
-                <Clock className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">On-Time Arrival</h3>
-              </div>
-              <p className="text-gray-600">
-                We respect your time. Our electricians arrive when scheduled and call ahead if there are any delays.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center space-x-3 mb-4">
-                <Wrench className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Quality Work</h3>
-              </div>
-              <p className="text-gray-600">
-                Every job is completed to the highest standards with quality materials and professional workmanship.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center space-x-3 mb-4">
-                <Home className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Clean & Tidy</h3>
-              </div>
-              <p className="text-gray-600">
-                We treat your home with respect, protecting your property and cleaning up after every job.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center space-x-3 mb-4">
-                <Shield className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Safety First</h3>
-              </div>
-              <p className="text-gray-600">
-                All work is performed to strict safety standards with proper testing and certification.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center space-x-3 mb-4">
-                <CheckCircle className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Quality Workmanship</h3>
-              </div>
-              <p className="text-gray-600">
-                All our work is completed to professional standards using quality materials and expert craftsmanship.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center space-x-3 mb-4">
-                <Star className="h-8 w-8 text-green-600" />
-                <h3 className="text-xl font-bold text-gray-900">Customer Satisfaction Focus</h3>
-              </div>
-              <p className="text-gray-600">
-                We strive for excellence in every job and work hard to ensure you're completely satisfied with our service.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Instagram Feed Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              See Our Work in Action
-            </h2>
-            <p className="text-xl text-gray-600">
-              Follow our latest projects and electrical installations on Instagram
-            </p>
-          </div>
-          <InstagramFeed username="dr_watts_electrical_services" />
-        </div>
-      </section>
+
+
 
       {/* CTA Section */}
       <section className="py-16 bg-green-900 text-white">
@@ -389,14 +211,14 @@ const About: React.FC = () => {
             Ready to Experience the Dr Watts Difference?
           </h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-            Join hundreds of satisfied Auckland homeowners who trust Dr Watts Electrical for all their electrical needs.
+            Join hundreds of satisfied Hibiscus Coast homeowners who trust Dr Watts Electrical for all their electrical needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
-              Get Free Quote
+              Contact The Doctor
             </Link>
             <a
               href="tel:+64220208415"

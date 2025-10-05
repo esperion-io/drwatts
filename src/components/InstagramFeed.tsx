@@ -25,9 +25,9 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({ username, className = '' 
   const mockPosts: InstagramPost[] = [
     {
       id: '1',
-      media_url: 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20electrician%20installing%20LED%20lights%20in%20modern%20Auckland%20home%20interior%20bright%20clean%20workspace&image_size=square',
+      media_url: 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20electrician%20installing%20LED%20lights%20in%20modern%20Hibiscus%20Coast%20home%20interior%20bright%20clean%20workspace&image_size=square',
       media_type: 'IMAGE',
-      caption: 'Just completed a beautiful LED lighting installation in this Auckland home! ✨ Energy-efficient and stunning results. #LEDLighting #AucklandElectrician #DrWattsElectrical',
+      caption: 'Just completed a beautiful LED lighting installation in this Hibiscus Coast home! ✨ Energy-efficient and stunning results. #LEDLighting #HibiscusCoastElectrician #DrWattsElectrical',
       permalink: 'https://instagram.com/p/example1',
       timestamp: '2024-01-15T10:30:00Z'
     },
@@ -35,7 +35,7 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({ username, className = '' 
       id: '2',
       media_url: 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20electrical%20switchboard%20upgrade%20installation%20professional%20work%20safety%20equipment&image_size=square',
       media_type: 'IMAGE',
-      caption: 'Switchboard upgrade completed! 🔧 Ensuring your home\'s electrical safety with the latest technology. #SwitchboardUpgrade #ElectricalSafety #Auckland',
+      caption: 'Switchboard upgrade completed! 🔧 Ensuring your home\'s electrical safety with the latest technology. #SwitchboardUpgrade #ElectricalSafety #HibiscusCoast',
       permalink: 'https://instagram.com/p/example2',
       timestamp: '2024-01-12T14:20:00Z'
     },
@@ -65,9 +65,9 @@ const InstagramFeed: React.FC<InstagramFeedProps> = ({ username, className = '' 
     },
     {
       id: '6',
-      media_url: 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=outdoor%20electrical%20installation%20garden%20lighting%20pathway%20lights%20Auckland%20home&image_size=square',
+      media_url: 'https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=outdoor%20electrical%20installation%20garden%20lighting%20pathway%20lights%20Hibiscus%20Coast%20home&image_size=square',
       media_type: 'IMAGE',
-      caption: 'Beautiful outdoor lighting installation! 🌟 Transform your outdoor space with professional electrical work. #OutdoorLighting #GardenLights #AucklandHomes',
+      caption: 'Beautiful outdoor lighting installation! 🌟 Transform your outdoor space with professional electrical work. #OutdoorLighting #GardenLights #HibiscusCoastHomes',
       permalink: 'https://instagram.com/p/example6',
       timestamp: '2024-01-03T13:20:00Z'
     }

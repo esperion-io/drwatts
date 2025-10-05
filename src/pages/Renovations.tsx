@@ -119,8 +119,8 @@ const Renovations: React.FC = () => {
     <>
       <Helmet>
         <title>Renovation Electrical Services Hibiscus Coast | Home Electrical Upgrades</title>
-        <meta name="description" content="Expert electrical services for home renovations in Auckland. Kitchen, bathroom, and living area electrical upgrades. Safety compliance, modern wiring. Free quotes." />
-        <meta name="keywords" content="renovation electrical auckland, kitchen electrical, bathroom electrical, home electrical upgrade, rewiring, electrical renovation, safety upgrade" />
+        <meta name="description" content="Expert electrical services for home renovations on the Hibiscus Coast. Kitchen, bathroom, and living area electrical upgrades. Safety compliance, modern wiring. Free quotes." />
+        <meta name="keywords" content="renovation electrical hibiscus coast, kitchen electrical, bathroom electrical, home electrical upgrade, rewiring, electrical renovation, safety upgrade" />
       </Helmet>
 
       {/* Hero Section */}
@@ -429,7 +429,7 @@ const Renovations: React.FC = () => {
               to="/contact"
               className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200"
             >
-              Get Free Quote
+              Contact The Doctor
             </Link>
             <a
               href="tel:+64220208415"
